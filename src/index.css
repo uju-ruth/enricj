@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { background-color: #F7F4EF; color: #1A1917; font-family: 'DM Sans', sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+}
+
+@layer components {
+  .btn-outline {
+    @apply inline-block px-6 py-2.5 border border-ink text-ink text-xs tracking-widest uppercase transition-all duration-200 cursor-pointer bg-transparent;
+  }
+  .btn-outline:hover { @apply bg-ink text-ivory; }
+  .btn-fill {
+    @apply inline-block px-6 py-2.5 bg-sienna border border-sienna text-ivory text-xs tracking-widest uppercase transition-all duration-200 cursor-pointer;
+  }
+  .btn-fill:hover { @apply bg-[#7a5234]; }
+  .section-label { @apply text-sienna text-[0.68rem] tracking-[0.2em] uppercase font-sans; }
+  .rule { @apply w-9 h-px bg-sienna my-5; }
+  .portrait-frame { @apply relative inline-block; }
+  .portrait-frame::after {
+    content: '';
+    @apply absolute border border-sienna pointer-events-none;
+    top: 10px; left: 10px; width: 100%; height: 100%; z-index: 0;
+  }
+  .portrait-frame img { @apply relative; z-index: 1; }
+  .essay-card { @apply border-t border-mist py-7 cursor-pointer transition-all duration-200; }
+  .essay-card:hover { @apply border-t-sienna; }
+  .essay-card:hover .essay-title { @apply text-sienna; }
+  .essay-title { @apply font-serif text-[1.55rem] font-normal leading-snug text-ink transition-colors duration-200; }
+  .essay-excerpt { @apply text-stone text-sm leading-relaxed mt-2 line-clamp-2; }
+  .article-body p { @apply font-serif text-xl leading-[1.88] text-[#3a3835] mb-6; }
+  .article-body strong { @apply font-semibold text-ink; }
+  .pull-quote { @apply font-serif italic text-2xl leading-relaxed text-stone border-l-2 border-sienna pl-6 my-8; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up  { animation: fadeUp 0.65s ease both; }
+.delay-1  { animation-delay: 0.08s; }
+.delay-2  { animation-delay: 0.18s; }
+.delay-3  { animation-delay: 0.28s; }
+.delay-4  { animation-delay: 0.4s; }
