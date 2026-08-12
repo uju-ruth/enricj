@@ -28,7 +28,7 @@ export default function Home() {
           <div className="fade-up delay-2 flex justify-center md:justify-end">
             <Link to="/about">
               <div className="portrait-frame w-72 md:w-80">
-                <img src="https://enricj.com/wp-content/uploads/2026/03/IMG_4093.JPG-1017x1024.jpeg" alt="Henry Chijindu Okpoli" className="w-full object-cover" style={{ aspectRatio: "1/1", filter: "grayscale(15%) contrast(1.05)" }} />
+                <img src="https://res.cloudinary.com/dnf53zdla/image/upload/v1786554794/imagecj_xcligg.png" alt="Henry Chijindu Okpoli" className="w-full object-cover" style={{ aspectRatio: "1/1", filter: "grayscale(15%) contrast(1.05)" }} />
               </div>
             </Link>
           </div>
