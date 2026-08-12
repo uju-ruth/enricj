@@ -13,7 +13,7 @@ export default function About() {
         <div className="grid md:grid-cols-5 gap-16 items-start">
           <div className="md:col-span-2 fade-up delay-1">
             <div className="portrait-frame w-full max-w-xs">
-              <img src="https://enricj.com/wp-content/uploads/2026/03/661854A2-BB78-4EE4-B665-095D7B89948E.jpg" alt="Henry Okpoli" className="w-full object-cover" style={{ filter: "grayscale(10%) contrast(1.05)" }} />
+              <img src="https://res.cloudinary.com/dnf53zdla/image/upload/v1786554794/imagecj_xcligg.png" alt="Henry Okpoli" className="w-full object-cover" style={{ filter: "grayscale(10%) contrast(1.05)" }} />
             </div>
             <div className="mt-8">
               <p className="section-label mb-2">Get in touch</p>
