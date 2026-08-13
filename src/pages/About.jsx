@@ -10,18 +10,34 @@ export default function About() {
           <h2 className="font-serif font-light text-ink" style={{ fontSize: "clamp(2.8rem, 6vw, 4.5rem)" }}>About Me</h2>
           <div className="rule" />
         </div>
+
         <div className="grid md:grid-cols-5 gap-16 items-start">
           <div className="md:col-span-2 fade-up delay-1">
-            <div className="portrait-frame w-full max-w-xs">
-              <img src="https://res.cloudinary.com/dnf53zdla/image/upload/v1786554794/imagecj_xcligg.png" alt="Henry Okpoli" className="w-full object-cover" style={{ filter: "grayscale(10%) contrast(1.05)" }} />
-            </div>
+            <div className="fade-up delay-2 flex justify-center md:justify-end">
+  <Link to="/about">
+    <div className="w-72 md:w-80">
+      <img
+        src="https://res.cloudinary.com/dnf53zdla/image/upload/v1786554794/imagecj_xcligg.png"
+        alt="Henry Chijindu Okpoli"
+        className="w-full aspect-[4/5] object-cover object-top"
+        style={{ filter: "grayscale(15%) contrast(1.05)" }}
+        onError={(e) => (e.target.style.display = "none")}
+      />
+    </div>
+  </Link>
+</div>
             <div className="mt-8">
               <p className="section-label mb-2">Get in touch</p>
-              <a href="mailto:okpolihenry@gmail.com" className="font-serif text-lg text-sienna hover:underline">okpolihenry@gmail.com</a>
+              <a href="mailto:okpolihenry@gmail.com" className="font-serif text-lg text-sienna hover:underline">
+                okpolihenry@gmail.com
+              </a>
             </div>
           </div>
+
           <div className="md:col-span-3 fade-up delay-2">
-            <blockquote className="pull-quote">Why do some societies create stability and opportunity, while others struggle despite having resources and potential?</blockquote>
+            <blockquote className="pull-quote">
+              Why do some societies create stability and opportunity, while others struggle despite having resources and potential?
+            </blockquote>
             <div className="article-body mt-6">
               <p>My name is Henry Okpoli. I am a scientist based in Belgium, working in the pharmaceutical industry. I am particularly interested in geopolitics, economic systems, institutions, and global power dynamics.</p>
               <p>Growing up in Nigeria and later living in Europe exposed me to very different systems of governance, culture, and opportunity. Experiencing these contrasts made me more observant and pushed me to think more deeply about how societies function.</p>
