@@ -41,7 +41,7 @@ export default function About() {
             <div className="article-body mt-6">
               <p>My name is Henry Okpoli. I am a scientist based in Belgium, working in the pharmaceutical industry. I am particularly interested in geopolitics, economic systems, institutions, and global power dynamics.</p>
               <p>Growing up in Nigeria and later living in Europe exposed me to very different systems of governance, culture, and opportunity. Experiencing these contrasts made me more observant and pushed me to think more deeply about how societies function.</p>
-              <p>This website is a space where I try to make sense of these observations. I write about the forces that shape nations — power, incentives, history, culture, and institutions — and how they affect everyday life.</p>
+              <p>This website is a space where I try to make sense of these observations. I write about the forces that shape nations power, incentives, history, culture, and institutions and how they affect everyday life.</p>
               <p>I am not trying to present final answers. Instead, I am interested in exploring patterns, asking better questions, and understanding the deeper structures behind what we see on the surface.</p>
               <p>This site serves as a personal archive of my thinking, a place to develop ideas more clearly than what is possible in short social media posts.</p>
             </div>

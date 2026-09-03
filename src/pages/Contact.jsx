@@ -51,7 +51,7 @@ export default function Contact() {
           <div className="fade-up delay-1">
             <blockquote className="pull-quote" style={{ fontSize: "1.6rem" }}>Let's talk.</blockquote>
             <p className="text-stone leading-relaxed my-6 text-sm">
-              Whether you'd like to discuss ideas, collaborate on something, or simply connect —
+              Whether you'd like to discuss ideas, collaborate on something, or simply connect 
               I'm always glad to hear from thoughtful people.
             </p>
             <p className="section-label mb-2">Email directly</p>
