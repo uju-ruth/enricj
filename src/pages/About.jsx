@@ -17,7 +17,7 @@ export default function About() {
   <Link to="/about">
     <div className="w-72 md:w-80">
       <img
-        src="https://res.cloudinary.com/dnf53zdla/image/upload/v1786554794/imagecj_xcligg.png"
+        src="https://res.cloudinary.com/dnf53zdla/image/upload/v1788450438/WhatsApp_Image_2026-09-01_at_15.32.59_as5wvt.jpg"
         alt="Henry Chijindu Okpoli"
         className="w-full aspect-[4/5] object-cover object-top"
         style={{ filter: "grayscale(15%) contrast(1.05)" }}
