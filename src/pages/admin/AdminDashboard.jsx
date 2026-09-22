@@ -15,13 +15,13 @@ export default function AdminDashboard() {
 
       {/* Stats */}
       <div className="grid grid-cols-2 gap-6 mb-12">
-        <Link to="/admin/essays" className="border-l-4 border-sienna bg-white px-6 py-5 hover:shadow-sm transition-shadow">
+        <Link to="/admin/essays" className="border-l-4 border-sienna bg-mist px-6 py-5 hover:shadow-glow transition-shadow">
           <p className="font-serif text-5xl text-ink font-light">
             {eLoading ? "—" : essays.length}
           </p>
           <p className="text-stone text-sm mt-1">Total Essays</p>
         </Link>
-        <Link to="/admin/publications" className="border-l-4 border-ink bg-white px-6 py-5 hover:shadow-sm transition-shadow">
+        <Link to="/admin/publications" className="border-l-4 border-volt bg-mist px-6 py-5 hover:shadow-volt transition-shadow">
           <p className="font-serif text-5xl text-ink font-light">
             {pLoading ? "—" : publications.length}
           </p>

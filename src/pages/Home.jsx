@@ -18,7 +18,7 @@ export default function Home() {
             >
               Henry
               <br />
-              <em>Chijindu</em>
+              <em className="headline-glow">Chijindu</em>
               <br />
               Okpoli
             </h1>

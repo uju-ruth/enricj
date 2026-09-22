@@ -8,12 +8,17 @@ module.exports = {
         sans:  ["'DM Sans'", "sans-serif"],
       },
       colors: {
-        ivory:  "#F7F4EF",
-        ink:    "#1A1917",
-        stone:  "#6B6560",
-        ash:    "#C8C3BB",
-        sienna: "#8B5E3C",
-        mist:   "#EDE9E3",
+        ivory:  "#0A0A0C",  // page background — near-black
+        ink:    "#F4F2ED",  // primary text / inverted fills — warm off-white
+        stone:  "#A8A39C",  // secondary text — warm grey
+        ash:    "#3A373C",  // muted borders
+        sienna: "#D7FF3E",  // accent — neon chartreuse
+        mist:   "#1E1D21",  // dividers / subtle panels
+        volt:   "#9D5CFF",  // secondary accent — electric violet glow
+      },
+      boxShadow: {
+        glow:  "0 0 40px -8px rgba(215,255,62,0.35)",
+        volt:  "0 0 60px -10px rgba(157,92,255,0.45)",
       },
     },
   },
