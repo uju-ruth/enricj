@@ -31,11 +31,11 @@
   }
   .btn-fill::before {
     content: '';
-    @apply absolute inset-0 bg-volt origin-left scale-x-0 transition-transform duration-300 ease-out;
+    @apply absolute inset-0 origin-left scale-x-0 transition-transform duration-300 ease-out;
     z-index: -1;
   }
   .btn-fill:hover::before { @apply scale-x-100; }
-  .btn-fill:hover { @apply border-volt text-ivory shadow-volt; }
+  .btn-fill:hover { @apply text-ivory shadow-volt; }
   .btn-fill:active { transform: scale(0.97); }
   .section-label { @apply text-sienna text-[0.68rem] tracking-[0.2em] uppercase font-sans; }
   .rule { @apply w-9 h-px bg-sienna my-5 shadow-glow; }
