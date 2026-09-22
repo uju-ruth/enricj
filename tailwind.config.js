@@ -7,14 +7,18 @@ module.exports = {
         serif: ["'Cormorant Garamond'", "Georgia", "serif"],
         sans:  ["'DM Sans'", "sans-serif"],
       },
-      colors: {
-        ivory:  "#0A0A0C",  // page background — near-black
-        ink:    "#F4F2ED",  // primary text / inverted fills — warm off-white
-        stone:  "#A8A39C",  // secondary text — warm grey
-        ash:    "#3A373C",  // muted borders
-        sienna: "#D7FF3E",  // accent — neon chartreuse
-        mist:   "#1E1D21",  // dividers / subtle panels
-        volt:   "#9D5CFF",  // secondary accent — electric violet glow
+            colors: {
+        ivory:  "#0A0A0C",
+        ink:    "#F4F2ED",
+        stone:  "#A8A39C",
+        ash:    "#3A373C",
+        sienna: "#E3B655",  // was #D7FF3E
+        mist:   "#1E1D21",
+        volt:   "#8F72E0",  // was #9D5CFF
+      },
+      boxShadow: {
+        glow:  "0 0 40px -8px rgba(227,182,85,0.30)",
+        volt:  "0 0 60px -10px rgba(143,114,224,0.40)",
       },
       boxShadow: {
         glow:  "0 0 40px -8px rgba(215,255,62,0.35)",

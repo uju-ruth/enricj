@@ -6,18 +6,37 @@
   html { scroll-behavior: smooth; }
   body { background-color: #0A0A0C; color: #F4F2ED; font-family: 'DM Sans', sans-serif; }
   h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
-  ::selection { background-color: #D7FF3E; color: #0A0A0C; }
+  ::selection { background-color: #E3B655; color: #0A0A0C; }
 }
 
 @layer components {
   .btn-outline {
-    @apply inline-block px-6 py-2.5 border border-ink text-ink text-xs tracking-widest uppercase transition-all duration-200 cursor-pointer bg-transparent;
+    @apply relative inline-block px-7 py-3 border border-ink text-ink text-xs tracking-widest uppercase cursor-pointer bg-transparent overflow-hidden transition-colors duration-300;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+    isolation: isolate;
   }
-  .btn-outline:hover { @apply bg-ink text-ivory shadow-glow; }
+  .btn-outline::before {
+    content: '';
+    @apply absolute inset-0 bg-ink origin-left scale-x-0 transition-transform duration-300 ease-out;
+    z-index: -1;
+  }
+  .btn-outline:hover::before { @apply scale-x-100; }
+  .btn-outline:hover { @apply text-ivory shadow-glow; }
+  .btn-outline:active { transform: scale(0.97); }
+
   .btn-fill {
-    @apply inline-block px-6 py-2.5 bg-sienna border border-sienna text-ivory text-xs tracking-widest uppercase transition-all duration-200 cursor-pointer shadow-glow;
+    @apply relative inline-block px-7 py-3 bg-sienna border border-sienna text-ivory text-xs tracking-widest uppercase cursor-pointer overflow-hidden transition-all duration-300 shadow-glow;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+    isolation: isolate;
   }
-  .btn-fill:hover { @apply bg-[#eaffa0] border-[#eaffa0]; }
+  .btn-fill::before {
+    content: '';
+    @apply absolute inset-0 bg-volt origin-left scale-x-0 transition-transform duration-300 ease-out;
+    z-index: -1;
+  }
+  .btn-fill:hover::before { @apply scale-x-100; }
+  .btn-fill:hover { @apply border-volt text-ivory shadow-volt; }
+  .btn-fill:active { transform: scale(0.97); }
   .section-label { @apply text-sienna text-[0.68rem] tracking-[0.2em] uppercase font-sans; }
   .rule { @apply w-9 h-px bg-sienna my-5 shadow-glow; }
   .portrait-frame { @apply relative inline-block; }
@@ -38,7 +57,7 @@
 
   /* new: gradient headline treatment for hero-level type */
   .headline-glow {
-    background: linear-gradient(100deg, #F4F2ED 0%, #F4F2ED 55%, #D7FF3E 100%);
+    background: linear-gradient(100deg, #F4F2ED 0%, #F4F2ED 55%, #E3B655 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
